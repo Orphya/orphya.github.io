@@ -5,7 +5,7 @@ hero:
   name: "Dark Land Chronicle FanWiki"
   tagline: "A fan-made database"
   image:
-    src: /img/ui/character.png
+    src: /character.png
     alt: "Logo"
   actions:
     - theme: alt
