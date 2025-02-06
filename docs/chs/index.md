@@ -5,7 +5,7 @@ hero:
   name: "Dark Land Chronicle FanWiki"
   tagline: "内容版本: v0.191"
   image:
-    src: /character.png
+    src: "https://raw.githubusercontent.com/Orphya/orphya.github.io/refs/heads/main/docs/character.png"
     alt: "Logo"
   actions:
     - theme: brand
