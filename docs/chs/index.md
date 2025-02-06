@@ -5,7 +5,7 @@ hero:
   name: "Dark Land Chronicle FanWiki"
   tagline: "内容版本: v0.191"
   image:
-    src: /assets/ui/character.png
+    src: /img/ui/character.png
     alt: "Logo"
   actions:
     - theme: brand
