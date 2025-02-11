@@ -18,7 +18,7 @@ export default defineConfig({
             { text: '任务', link: '/chs/quest/' },
             { text: '背包', link: '/chs/item/' },
             { text: '配方', link: '/chs/craft/' },
-            { text: '地区', link: '/chs/regoin/' },
+            { text: '地区', link: '/chs/region/' },
             { text: 'NPC', link: '/chs/npc/' }
           ]
         }
