@@ -81,7 +81,7 @@ next: false
 [枯瘦山脉]: #/
 [青铜道]: #/
 
-<style type="text/css">
+<style module>
   img {max-width: 72px; max-height: 72px; margin: 0 auto;}
   th {min-width: 120px}
 </style>
