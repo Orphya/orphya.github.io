@@ -74,13 +74,6 @@ next: false
 | south_ranch_guard_c | [异兽牧场警备队](#/) |  | - |
 | villager_south_female | [英格拉](#/) | 没落贵族之女 | - |
 
-
-[荒野十字路口]: #/
-[卡曼贾斯]: #/
-[卡曼贾斯郊外]: #/
-[枯瘦山脉]: #/
-[青铜道]: #/
-
 <style module>
   .img {max-width: 72px; max-height: 72px; margin: 0 auto;}
   .th {min-width: 120px}
