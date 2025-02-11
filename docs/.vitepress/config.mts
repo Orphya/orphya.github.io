@@ -14,12 +14,12 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: '主页', link: '/chs/' },
-            { text: '教程', link: '/chs/教程/' },
-            { text: '任务', link: '/chs/任务/' },
-            { text: '背包', link: '/chs/背包/' },
-            { text: '配方', link: '/chs/配方/' },
-            { text: '地区', link: '/chs/地区/' },
-            { text: 'NPC', link: '/chs/NPC/' }
+            { text: '教程', link: '/chs/tutorial/' },
+            { text: '任务', link: '/chs/quest/' },
+            { text: '背包', link: '/chs/item/' },
+            { text: '配方', link: '/chs/craft/' },
+            { text: '地区', link: '/chs/regoin/' },
+            { text: 'NPC', link: '/chs/npc/' }
           ]
         }
       ]
