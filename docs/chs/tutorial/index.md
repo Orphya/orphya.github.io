@@ -111,7 +111,7 @@ next: false
 
 ### 地图界面
 
-详细地图请前往[这里](/chs/地区/)查看
+详细地图请前往[这里](/chs/region/)查看
 
 ![地图界面](/img/tutorial/9dc97ba869d805a6.png)
 
