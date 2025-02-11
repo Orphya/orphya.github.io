@@ -76,5 +76,5 @@ next: false
 
 <style module>
   .img {max-width: 72px; max-height: 72px; margin: 0 auto;}
-  .th {min-width: 120px}
+  .th {min-width: 64px}
 </style>

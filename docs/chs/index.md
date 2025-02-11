@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: "Dark Land Chronicle Wiki"
-  tagline: "内容版本: v0.191"
+  tagline: "内容版本: v0.193"
   image:
     src: "https://raw.githubusercontent.com/Orphya/orphya.github.io/refs/heads/main/docs/character.png"
     alt: "Logo"

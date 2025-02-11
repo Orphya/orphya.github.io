@@ -10,10 +10,6 @@ next: false
 该页面下有一个或多个子页面尚未编写，随时会做出较大改动，请以最新内容为准。
 :::
 
----
-
-### 分类
-
 [[toc]]
 
 ---
@@ -25,5 +21,5 @@ next: false
 
 <style module>
   .img {max-width: 72px; max-height: 72px; margin: 0 auto;}
-  .th {min-width: 120px}
+  .th {min-width: 96px}
 </style>
