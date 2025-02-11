@@ -10,20 +10,20 @@ hero:
   actions:
     - theme: brand
       text: "教程"
-      link: /chs/教程/
+      link: /chs/tutorial/
     - theme: alt
       text: "任务"
-      link: /chs/任务/
+      link: /chs/quest/
     - theme: alt
       text: "背包"
-      link: /chs/背包/
+      link: /chs/item/
     - theme: alt
       text: "配方"
-      link: /chs/配方/
+      link: /chs/craft/
     - theme: alt
       text: "地图"
-      link: /chs/地区/
+      link: /chs/region/
     - theme: alt
       text: "NPC"
-      link: /chs/NPC/
+      link: /chs/npc/
 ---
