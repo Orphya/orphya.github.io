@@ -6,65 +6,35 @@ next: false
 
 # 背包
 
-WIP
+::: danger 注意
+该页面下有一个或多个子页面尚未编写，随时会做出较大改动，请以最新内容为准。
+:::
 
 ---
 
 ### 分类
 
-- [特殊](#特殊)
-- [信件](#信件)
-- [地图](#地图)
-- [书籍](#书籍)
-- [武器](#武器)
-  - [刀剑](#刀剑)
-  - [未分类](#未分类)
-- [工具](#工具)
-- [装备](#装备)
-- [药水](#药水)
-- [主原料](#主原料)
-- [副原料](#副原料)
-- [食物](#食物)
-- [料理](#料理)
-- [素材](#素材)
-- [矿石](#矿石)
-- [农业](#农业)
-- [医药](#医药)
-- [未分类](#未分类)
+[[toc]]
 
 ---
 
-### 特殊
+### 鞭子
 
 | 图片 | 物品 | 特质 | 描述 |
 | :-: | :-: | :-: | :-- |
-| ![城门钥匙](/img/item/key_a.png) | [城门钥匙]() | <Badge type="warning" text="消耗道具" /> | 打开卡曼贾斯的城门钥匙。 |
 
-### 信件
+### 刀剑
 
 | 图片 | 物品 | 特质 | 描述 |
 | :-: | :-: | :-: | :-- |
-| ![给伊哈儿的信](/img/item/letter_b.png) | [给伊哈儿的信]() |  | 来自熟人的信件。 |
+| ![精灵剑](/img/item/31bd59eb2ac96f89.png) | [精灵剑](#/) | <Badge type="tip" text="耐久 30" /><br /><Badge type="tip" text="近战 10" /> |  |
 
 ### 地图
 
 | 图片 | 物品 | 特质 | 描述 |
 | :-: | :-: | :-: | :-- |
 
-### 书籍
-
-| 图片 | 物品 | 特质 | 描述 |
-| :-: | :-: | :-: | :-- |
-
-### 武器
-
-#### + 刀剑
-
-| 图片 | 物品 | 特质 | 描述 |
-| :-: | :-: | :-: | :-- |
-| ![精灵剑](/img/item/sword_elf.png) | [精灵剑]() | <Badge type="tip" text="耐久 30" /><br /><Badge type="tip" text="近战 10" /> |  |
-
-#### + 未分类
+### 副原料
 
 | 图片 | 物品 | 特质 | 描述 |
 | :-: | :-: | :-: | :-- |
@@ -74,28 +44,58 @@ WIP
 | 图片 | 物品 | 特质 | 描述 |
 | :-: | :-: | :-: | :-- |
 
-### 装备
+### 弓
 
 | 图片 | 物品 | 特质 | 描述 |
 | :-: | :-: | :-: | :-- |
-| ![精灵长靴](/img/item/elf_boots.png) | [精灵长靴]() | <Badge type="tip" text="耐久 10" /><br /><Badge type="tip" text="防御 1" /> |  |
-| ![精灵披风](/img/item/elf_cape.png) | [精灵披风]() | <Badge type="tip" text="耐久 10" /><br /><Badge type="tip" text="防御 2" /> |  |
-| ![精灵外衣](/img/item/elf_cloth.png) | [精灵外衣]() | <Badge type="tip" text="耐久 20" /><br /><Badge type="tip" text="防御 1" /> |  |
-| ![皮革手套](/img/item/leather_gloves.png) | [皮革手套]() | <Badge type="tip" text="耐久 10" /><br /><Badge type="tip" text="防御 1" /> |  |
 
-### 药水
-
-| 图片 | 物品 | 特质 | 描述 |副原料/assets
-| :-: | :-: | :-: | :-- |
-
-### 主原料
+### 贵重物品
 
 | 图片 | 物品 | 特质 | 描述 |
 | :-: | :-: | :-: | :-- |
-| ![不知名肉块](/img/item/monter_meat.png) | [不知名肉块]() | <Badge type="tip" text="+10 体力" /><br /><Badge type="danger" text="-20 精神" /> |  |
-| ![甘蓝菜](/img/item/cabbage.png) | [甘蓝菜]() | <Badge type="tip" text="+5 体力" /> |  |
 
-### 副原料
+### 箭矢
+
+| 图片 | 物品 | 特质 | 描述 |
+| :-: | :-: | :-: | :-- |
+
+### 矿石
+
+| 图片 | 物品 | 特质 | 描述 |
+| :-: | :-: | :-: | :-- |
+| ![铁矿](/img/item/31bd59eb2ac96f89.png) | [铁矿](#/) |  |  |
+| ![银矿](/img/item/31bd59eb2ac96f89.png) | [银矿](#/) |  |  |
+
+### 料理
+
+| 图片 | 物品 | 特质 | 描述 |
+| :-: | :-: | :-: | :-- |
+| ![哥布林精力烤肉](/img/item/31bd59eb2ac96f89.png) | [哥布林精力烤肉](#/) | <Badge type="tip" text="+100 体力" /> |  |
+| ![诡异料理](/img/item/31bd59eb2ac96f89.png) | [诡异料理](#/) | <Badge type="tip" text="+30 体力" /><br /><Badge type="danger" text="-10 精神" /> |  |
+| ![肉杂汤](/img/item/31bd59eb2ac96f89.png) | [肉杂汤](#/) | <Badge type="tip" text="+15 体力" /> |  |
+| ![蔬菜汤](/img/item/31bd59eb2ac96f89.png) | [蔬菜汤](#/) | <Badge type="tip" text="+10 体力" /><br /><Badge type="tip" text="+5 精神" /> |  |
+
+### 矛
+
+| 图片 | 物品 | 特质 | 描述 |
+| :-: | :-: | :-: | :-- |
+
+### 魔法道具
+
+| 图片 | 物品 | 特质 | 描述 |
+| :-: | :-: | :-: | :-- |
+
+### 农业
+
+| 图片 | 物品 | 特质 | 描述 |
+| :-: | :-: | :-: | :-- |
+
+### 染色剂
+
+| 图片 | 物品 | 特质 | 描述 |
+| :-: | :-: | :-: | :-- |
+
+### 任务道具
 
 | 图片 | 物品 | 特质 | 描述 |
 | :-: | :-: | :-: | :-- |
@@ -104,40 +104,62 @@ WIP
 
 | 图片 | 物品 | 特质 | 描述 |
 | :-: | :-: | :-: | :-- |
-| ![不知名肉块](/img/item/monter_meat.png) | [不知名肉块]() | <Badge type="tip" text="+10 体力" /><br /><Badge type="danger" text="-20 精神" /> |  |
-| ![甘蓝菜](/img/item/cabbage.png) | [甘蓝菜]() | <Badge type="tip" text="+5 体力" /> |  |
+| ![不知名肉块](/img/item/31bd59eb2ac96f89.png) | [不知名肉块](#/) | <Badge type="tip" text="+10 体力" /><br /><Badge type="danger" text="-20 精神" /> |  |
+| ![甘蓝菜](/img/item/31bd59eb2ac96f89.png) | [甘蓝菜](#/) | <Badge type="tip" text="+5 体力" /> |  |
 
-### 料理
+### 书籍
 
 | 图片 | 物品 | 特质 | 描述 |
 | :-: | :-: | :-: | :-- |
-| ![哥布林精力烤肉](/img/item/goblin_roast.png) | [哥布林精力烤肉]() | <Badge type="tip" text="+100 体力" /> |  |
-| ![诡异料理](/img/item/cooked_monster_meat.png) | [诡异料理]() | <Badge type="tip" text="+30 体力" /><br /><Badge type="danger" text="-10 精神" /> |  |
-| ![肉杂汤](/img/item/soup_meat.png) | [肉杂汤]() | <Badge type="tip" text="+15 体力" /> |  |
-| ![蔬菜汤](/img/item/soup_vege.png) | [蔬菜汤]() | <Badge type="tip" text="+10 体力" /><br /><Badge type="tip" text="+5 精神" /> |  |
 
 ### 素材
 
 | 图片 | 物品 | 特质 | 描述 |
 | :-: | :-: | :-: | :-- |
-| ![绿色怪物血](/img/item/monster_blood_green.png) | [绿色怪物血]() |  | 来自某些未知怪物的绿色血液，用于炼金和制作特定物品。 |
+| ![绿色怪物血](/img/item/31bd59eb2ac96f89.png) | [绿色怪物血](#/) |  | 来自某些未知怪物的绿色血液，用于炼金和制作特定物品。 |
 
-### 矿石
-
-| 图片 | 物品 | 特质 | 描述 |
-| :-: | :-: | :-: | :-- |
-| ![铁矿](/img/item/ore_iron.png) | [铁矿]() | <Badge type="info" text="可加工" /> |  |
-| ![银矿](/img/item/ore_silver.png) | [银矿]() | <Badge type="info" text="可加工" /> |  |
-
-### 农业
+### 特殊
 
 | 图片 | 物品 | 特质 | 描述 |
 | :-: | :-: | :-: | :-- |
+| ![城门钥匙](/img/item/31bd59eb2ac96f89.png) | [城门钥匙](#/) | <Badge type="warning" text="消耗道具" /> | 打开卡曼贾斯的城门钥匙。 |
+| ![红水晶](/img/item/31bd59eb2ac96f89.png) | [红水晶](#/) | <Badge type="warning" text="消耗道具" /> | 劣质的红水晶，似乎被哥布林作为主要货币使用。 |
+| ![金币](/img/item/31bd59eb2ac96f89.png) | [金币](#/) | <Badge type="warning" text="消耗道具" /> | 用来交易用的货币，流通于乌里哈西斯的人类王国。 |
+
+### 信件
+
+| 图片 | 物品 | 特质 | 描述 |
+| :-: | :-: | :-: | :-- |
+| ![给伊哈儿的信](/img/item/31bd59eb2ac96f89.png) | [给伊哈儿的信](#/) |  | 来自熟人的信件。 |
+
+### 药水
+
+| 图片 | 物品 | 特质 | 描述 |
+| :-: | :-: | :-: | :-- |
+| ![情欲药水](/img/item/31bd59eb2ac96f89.png) | [情欲药水](#/) | <Badge type="tip" text="+100 亢奋" /> | 能够使人情欲高亢的药水，但如果对方心情不好的话，效果会大打折扣。 |
 
 ### 医药
 
 | 图片 | 物品 | 特质 | 描述 |
 | :-: | :-: | :-: | :-- |
+| ![日曦花](/img/item/31bd59eb2ac96f89.png) | [日曦花](#/) |  | 花瓣呈现着温暖的橘红色调，仿佛在黎明时分绽放的阳光，为周围的环境带来一丝生气和活力。 |
+| ![霜蓝花](/img/item/31bd59eb2ac96f89.png) | [霜蓝花](#/) |  | 神秘的蓝色花朵，花瓣呈现着清凉的蓝色调，宛如结冰的蓝宝石。 |
+
+### 主原料
+
+| 图片 | 物品 | 特质 | 描述 |
+| :-: | :-: | :-: | :-- |
+| ![不知名肉块](/img/item/31bd59eb2ac96f89.png) | [不知名肉块](#/) | <Badge type="tip" text="+10 体力" /><br /><Badge type="danger" text="-20 精神" /> |  |
+| ![甘蓝菜](/img/item/31bd59eb2ac96f89.png) | [甘蓝菜](#/) | <Badge type="tip" text="+5 体力" /> |  |
+
+### 装备
+
+| 图片 | 物品 | 特质 | 描述 |
+| :-: | :-: | :-: | :-- |
+| ![精灵披风](/img/item/31bd59eb2ac96f89.png) | [精灵披风](#/) | <Badge type="tip" text="耐久 10" /><br /><Badge type="tip" text="防御 2" /> |  |
+| ![精灵外衣](/img/item/31bd59eb2ac96f89.png) | [精灵外衣](#/) | <Badge type="tip" text="耐久 20" /><br /><Badge type="tip" text="防御 1" /> |  |
+| ![精灵长靴](/img/item/31bd59eb2ac96f89.png) | [精灵长靴](#/) | <Badge type="tip" text="耐久 10" /><br /><Badge type="tip" text="防御 1" /> |  |
+| ![皮革手套](/img/item/31bd59eb2ac96f89.png) | [皮革手套](#/) | <Badge type="tip" text="耐久 10" /><br /><Badge type="tip" text="防御 1" /> |  |
 
 ### 未分类
 

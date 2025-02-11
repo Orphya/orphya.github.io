@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: "Dark Land Chronicle FanWiki"
+  name: "Dark Land Chronicle Wiki"
   tagline: "内容版本: v0.191"
   image:
     src: "https://raw.githubusercontent.com/Orphya/orphya.github.io/refs/heads/main/docs/character.png"
@@ -22,7 +22,7 @@ hero:
       link: /chs/配方/
     - theme: alt
       text: "地图"
-      link: /chs/地图/
+      link: /chs/地区/
     - theme: alt
       text: "NPC"
       link: /chs/NPC/

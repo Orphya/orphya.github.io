@@ -18,7 +18,7 @@ export default defineConfig({
             { text: '任务', link: '/chs/任务/' },
             { text: '背包', link: '/chs/背包/' },
             { text: '配方', link: '/chs/配方/' },
-            { text: '地图', link: '/chs/地图/' },
+            { text: '地区', link: '/chs/地区/' },
             { text: 'NPC', link: '/chs/NPC/' }
           ]
         }
@@ -32,7 +32,7 @@ export default defineConfig({
     ],
 
     footer: {
-      copyright: "这是由玩家自发制作的数据库，游戏资源版权归原版权所有方 Winterfire Studio 所有。"
+      copyright: "A fan-made database made by players, all game assets are property of Winterfire Studio.<br />这是由玩家自发制作的数据库，游戏资源版权归原版权所有方 Winterfire Studio 所有。"
     }
   }
 })
