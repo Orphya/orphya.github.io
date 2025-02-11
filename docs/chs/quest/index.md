@@ -34,6 +34,6 @@ next: false
 | [造访异兽牧场](/chs/quest/visit_ranch/) |
 
 <style module>
-  img {max-width: 72px; max-height: 72px; margin: 0 auto;}
-  th {min-width: 120px}
+  .img {max-width: 72px; max-height: 72px; margin: 0 auto;}
+  .th {min-width: 120px}
 </style>
