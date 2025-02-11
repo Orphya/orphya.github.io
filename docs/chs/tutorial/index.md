@@ -122,6 +122,6 @@ next: false
 ![任务界面](/img/tutorial/462b71e8c684a8a7.png)
 
 <style type="text/css">
-  img {margin: 0 auto}
+  img {max-width: auto; max-height: auto; margin: 0 auto}
   th {min-width: 64px}
 </style>
