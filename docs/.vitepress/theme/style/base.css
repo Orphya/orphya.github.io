@@ -1,0 +1,32 @@
+.vp-doc a {
+  text-decoration: none;
+}
+
+.vp-doc h1 > .VPBadge,
+.vp-doc h2 > .VPBadge,
+.vp-doc h3 > .VPBadge,
+.vp-doc h4 > .VPBadge {
+  vertical-align: middle;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  margin: 0 auto;
+}
+
+th,
+td {
+  min-width: 72px;
+}
+
+th img,
+td img {
+  max-width: 64px;
+}

@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: "Dark Land Chronicle Wiki",
+  appearance: 'force-dark',
   lastUpdated: true,
   themeConfig: {
     nav: [

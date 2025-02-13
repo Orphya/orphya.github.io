@@ -262,8 +262,3 @@ next: false
 ::: info 角色有自己的价值观！
 不同的角色都有自己独特的价值观。例如，正义凛然的角色对于偷窃的行为非常不耻，而盗贼则对偷窃这个行为相对宽容。
 :::
-
-<style module>
-  .img {width: auto; height: auto; margin: 0 auto}
-  .th {min-width: 64px}
-</style>

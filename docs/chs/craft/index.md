@@ -18,8 +18,3 @@ next: false
 
 | 图片 | 料理 | 特质 | 主原料 | 副原料 |
 | :-: | :-: | :-: | :-: | :-: |
-
-<style module>
-  .img {max-width: 72px; max-height: 72px; margin: 0 auto;}
-  .th {min-width: 96px}
-</style>

@@ -73,8 +73,3 @@ next: false
 | south_ranch_guard_b | [异兽牧场警备队](#/) |  | - |
 | south_ranch_guard_c | [异兽牧场警备队](#/) |  | - |
 | villager_south_female | [英格拉](#/) | 没落贵族之女 | - |
-
-<style module>
-  .img {max-width: 72px; max-height: 72px; margin: 0 auto;}
-  .th {min-width: 64px}
-</style>
