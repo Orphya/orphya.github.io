@@ -33,6 +33,7 @@ export default defineConfig({
     ],
 
     footer: {
+      message: '<a href="https://github.com/Orphya/orphya.github.io"><img alt="Views" src="https://hits.sh/orphya.github.io.svg?label=Views&color=161618"></a>',
       copyright: "A fan-made database made by players, all game assets are property of Winterfire Studio.<br />这是由玩家自发制作的数据库，游戏资源版权归原版权所有方 Winterfire Studio 所有。"
     }
   }
