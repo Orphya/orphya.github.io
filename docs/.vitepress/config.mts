@@ -19,6 +19,7 @@ export default defineConfig({
   appearance: 'force-dark',
   lastUpdated: true,
   cleanUrls: true,
+  ignoreDeadLinks: false,
 
   head: [
     ['link', { rel: 'icon', type: 'image/ico', href: '/favicon.ico' }]
