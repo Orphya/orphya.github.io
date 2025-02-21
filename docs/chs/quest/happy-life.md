@@ -12,7 +12,7 @@ layout: doc
 
 ::: details 该任务为赫塔相关任务的第 4 个任务，共有 4 个任务。
 - [寒冷的夜](cold-night)
-- [干柴烈火](find-guys)
+- [干柴烈火](find-guy)
 - [造访异兽牧场](visit-ranch)
 - <span style="color: #ffd580">欢悦人生</span>
 :::
