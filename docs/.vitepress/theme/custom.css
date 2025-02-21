@@ -1,0 +1,59 @@
+.vp-doc a {
+  text-decoration: none;
+}
+
+.vp-doc h1 > .VPBadge,
+.vp-doc h2 > .VPBadge,
+.vp-doc h3 > .VPBadge,
+.vp-doc h4 > .VPBadge {
+  vertical-align: middle;
+}
+
+.logo {
+  margin-left: 2px;
+}
+
+.medium-zoom-overlay {
+  z-index: 50;
+}
+
+.medium-zoom-image {
+  z-index: 100 !important;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  margin: 0 auto;
+}
+
+a,
+img {
+  user-drag: none;
+  -ms-user-drag: none;
+  -moz-user-drag: none;
+  -webkit-user-drag: none;
+}
+
+img {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+th,
+td {
+  min-width: 72px;
+}
+
+th img,
+td img {
+  max-width: 64px;
+}
