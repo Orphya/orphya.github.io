@@ -1,11 +1,16 @@
 name: build
 
 on:
-  workflow_dispatch:
-
   workflow_run:
     workflows: [pages-build-deployment]
     types: [completed]
+    
+  workflow_dispatch:
+    inputs:
+      tags:
+        description: 'beta version'
+        required: false
+        type: boolean
 
 permissions:
   contents: read
