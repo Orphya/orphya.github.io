@@ -4,18 +4,6 @@ import { en } from './locales/en'
 import { chs } from './locales/chs'
 
 export default defineConfig({
-  vite: {
-    build: {
-      rollupOptions: {
-        output: {
-          entryFileNames: '[name].js',
-          chunkFileNames: '[name].js',
-          assetFileNames: 'assets/[name][extname]'
-        }
-      }
-    }
-  },
-
   appearance: 'force-dark',
   lastUpdated: true,
   cleanUrls: true,
