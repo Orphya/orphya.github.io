@@ -1,12 +1,11 @@
+import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
-import './custom.css'
+import './style/custom.css'
 
 import mediumZoom from 'medium-zoom'
 import { useData, useRoute } from 'vitepress'
 import giscusTalk from 'vitepress-plugin-comment-with-giscus'
 import { onMounted, watch, nextTick } from 'vue'
-
-
 
 export default {
   extends: DefaultTheme,
@@ -41,4 +40,4 @@ export default {
       true
     );
   }
-}
+} satisfies Theme
