@@ -1,3 +1,0 @@
-files:
-  - source: docs/chs/**/*.md
-    translation: docs/%language%/%original_path%
