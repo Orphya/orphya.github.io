@@ -1,87 +1,79 @@
 import { DefaultTheme, defineConfig } from 'vitepress'
 
 export const en = defineConfig({
-  lang: 'en-US',
-  title: 'Dark Land Chronicle Wiki',
+  lang: 'zh-Hans',
+  title: '暗黑大陆编年史 Wiki',
   description: '',
 
   themeConfig: {
     nav: nav(),
 
     sidebar: {
-      '/en/guide/': { base: '/en/guide/', items: sidebar_Guidelines() },
-      '/en/quest/': { base: '/en/quest/', items: sidebar_Quest() },
-      '/en/region/': { base: '/en/region/', items: sidebar_Region() },
-      '/en/data/': { base: '/en/data/', items: sidebar_Data() },
-      '/en/npc/': { base: '/en/npc/', items: sidebar_NPC() }
+      '/chs/guide/': { base: '/chs/guide/', items: sidebar_Guidelines() },
+      '/chs/quest/': { base: '/chs/quest/', items: sidebar_Quest() },
+      '/chs/region/': { base: '/chs/region/', items: sidebar_Region() },
+      '/chs/item/': { base: '/chs/item/', items: sidebar_Item() },
+      '/chs/npc/': { base: '/chs/npc/', items: sidebar_NPC() }
     },
 
     footer: {
       message: '<a href="https://github.com/Orphya/orphya.github.io"><img alt="Views" src="https://hits.sh/orphya.github.io.svg?label=Views&color=161618"></a>',
-      copyright: 'Game Assets Copyright © 冬火工房'
+      copyright: '游戏资产 Copyright © 冬火工房'
     },
 
     docFooter: {
-      prev: 'Previous Page',
-      next: 'Next Page'
+      prev: '上一节',
+      next: '下一节'
     },
 
     outline: {
-      label: 'On This Page'
+      label: '页面导航'
     },
 
     lastUpdated: {
-      text: 'LastuUpdated:',
+      text: '最后更新于',
       formatOptions: {
         dateStyle: 'short',
         timeStyle: 'medium'
       }
     },
 
-    langMenuLabel: 'Multi Languages',
-    returnToTopLabel: 'Return to top',
-    sidebarMenuLabel: 'Menu',
-    darkModeSwitchLabel: 'Appearance',
-    lightModeSwitchTitle: 'Switch to light theme',
-    darkModeSwitchTitle: 'Switch to dark theme',
-    skipToContentLabel: 'Jump to'
+    langMenuLabel: '多语言',
+    returnToTopLabel: '回到顶部',
+    sidebarMenuLabel: '菜单',
+    darkModeSwitchLabel: '主题',
+    lightModeSwitchTitle: '切换到浅色模式',
+    darkModeSwitchTitle: '切换到深色模式',
+    skipToContentLabel: '跳转到内容'
   }
 })
 
 function nav(): DefaultTheme.NavItem[] {
   return [
     {
-      text: 'Guides',
-      activeMatch: '/en/guide/',
-      items: [
-        { text: 'Basic Guides', link: '/en/guide/basic-guidelines'},
-        { text: 'Advanced Guides', link: '/en/guide/advanced-guidelines'},
-        { text: 'World Views', link: '/en/guide/world-views'},
-        { text: 'Game Input', link: '/en/guide/game-input'}
-      ]
+      text: '指南',
+      activeMatch: '/chs/guide/',
+      link: '/chs/guide/',
     },
     {
-      text: 'Quests',
-      activeMatch: '/en/quest/',
-      link: '/en/quest/list'
+      text: '任务',
+      activeMatch: '/chs/quest/',
+      link: '/chs/quest/',
     },
     {
-      text: 'Regions',
-      activeMatch: '/en/region/',
-      link: '/en/region/list'
+      text: '物品',
+      activeMatch: '/chs/item/',
+      link: '/chs/item/',
     },
     {
-      text: 'Data Bank',
-      activeMatch: '/en/data/',
-      items: [
-        { text: '物品', link: '/en/data/inventory/list'},
-        { text: '配方', link: '/en/data/formula/list'}
-      ]
+      text: '地区',
+      activeMatch: '/chs/region/',
+      link: '/chs/region/',
     },
     {
       text: 'NPC',
-      activeMatch: '/en/npc/',
-      link: '/en/npc/list'
+      activeMatch: '/chs/npc/',
+      link: '/chs/npc/',
     }
   ]
 }
@@ -89,12 +81,12 @@ function nav(): DefaultTheme.NavItem[] {
 function sidebar_Guidelines(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: 'Guides',
+      text: '指南',
       items: [
-        { text: 'Basic Guides', link: 'basic-guidelines' },
-        { text: 'Advanced Guides', link: 'advanced-guidelines' },
-        { text: 'Game Views', link: 'world-views' },
-        { text: 'Game Input', link: 'game-input' }
+        { text: '基础指南', link: 'basic-guidelines' },
+        { text: '进阶指南', link: 'advanced-guidelines' },
+        { text: '世界观', link: 'world-views' },
+        { text: '游戏输入', link: 'game-input' }
       ]
     }
   ]
@@ -103,25 +95,45 @@ function sidebar_Guidelines(): DefaultTheme.SidebarItem[] {
 function sidebar_Quest(): DefaultTheme.SidebarItem[] {
   return[
     {
-      text: 'Quest List',
+      text: '任务列表',
       link: 'list',
+      items: []
+    }
+  ]
+}
+
+function sidebar_Item(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      text: '物品',
+      base: '/chs/item/category-',
+      link: 'list',
+      collapsed: false,
       items: [
-        { text: 'Underground Basement', link: 'basement-things' },
-        { text: 'Cold Night', link: 'cold-night' },
-        { text: 'Dye Source', link: 'collect-purple-flower' },
-        { text: 'Invisible War', link: 'exchange-prisoner' },
-        { text: 'Mother of the Boneless Ones', link: 'feed-boneless' },
-        { text: 'Burning Desires', link: 'find-guy' },
-        { text: 'Trial of the Forest Ranger', link: 'forest-squad-final-training' },
-        { text: 'Joining the Forest Ranger', link: 'forest-squad-join' },
-        { text: 'Forest Ranger Combat Training', link: 'forest-squad-training' },
-        { text: 'Gold Necklace', link: 'gold-necklace' },
-        { text: 'A Joyful Life', link: 'happy-life' },
-        { text: 'Investigate Heresy', link: 'investigate-cult' },
-        { text: 'The Man in the Mountains', link: 'investigate-fat' },
-        { text: 'The Lost Book', link: 'lost-book' },
-        { text: 'The Dilapidated Road Home', link: 'save-poor-daughter' },
-        { text: 'Visit the Arcane Beast Ranch', link: 'visit-ranch' }
+        { text: '鞭子', link: 'whip' },
+        { text: '刀剑', link: 'sword' },
+        { text: '地图', link: 'map' },
+        { text: '副原料', link: 'subingredient' },
+        { text: '工具', link: 'tool' },
+        { text: '弓', link: 'bow' },
+        { text: '贵重物品', link: 'treasure' },
+        { text: '箭矢', link: 'arrow' },
+        { text: '矿石', link: 'mineral' },
+        { text: '料理', link: 'cuisine' },
+        { text: '矛', link: 'spear' },
+        { text: '魔法道具', link: 'magical-item' },
+        { text: '农业', link: 'agriculture' },
+        { text: '染色剂', link: 'dye' },
+        { text: '任务道具', link: 'quest-item' },
+        { text: '食物', link: 'raw-food' },
+        { text: '书籍', link: 'book' },
+        { text: '素材', link: 'resource' },
+        { text: '特殊', link: 'special' },
+        { text: '信件', link: 'letter' },
+        { text: '药水', link: 'potion' },
+        { text: '医药', link: 'medical' },
+        { text: '主原料', link: 'main-ingredient' },
+        { text: '装备', link: 'equipment' }
       ]
     }
   ]
@@ -130,81 +142,8 @@ function sidebar_Quest(): DefaultTheme.SidebarItem[] {
 function sidebar_Region(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: 'Regions',
+      text: '地区',
       link: 'list',
-      items: [
-        { text: 'Bronzepass', link: 'bronze-path' },
-        { text: 'Groggar Forest Perimeter', link: 'elf-forest-environs' },
-        { text: 'Grogga Forest Trail', link: 'elf-forest-path' },
-        { 
-          text: 'Southern Timberland',
-          link: 'goblin-forest',
-          collapsed: true,
-          items: [
-            { text: 'Southern Timberland A', link: 'goblin-forest-a' },
-            { text: 'Southern Timberland B', link: 'goblin-forest-b' },
-            { text: 'Southern Timberland C', link: 'goblin-forest-c' },
-            { text: 'Southern Timberland D', link: 'goblin-forest-d' }
-          ]
-        },
-        { text: 'Goblin Surveillance Camp', link: 'goblin-forest-environs' },
-        { text: 'Goblin Village', link: 'goblin-village' },
-        { text: 'Hrunthall', link: 'mini-south-village' },
-        { 
-          text: 'Skinny Edge',
-          link: 'skinny-edge',
-          collapsed: true,
-          items: [
-            { text: 'Lactation Temple', link: 'boneless-site-lactation' }
-          ]
-        },
-        { text: 'Kharmangas', link: 'south-village' },
-        { text: 'Kharmangas Environs', link: 'south-village-environs' },
-        { text: 'Wildcross', link: 'wildcross' }
-      ]
-    }
-  ]
-}
-
-function sidebar_Data(): DefaultTheme.SidebarItem[] {
-  return [
-    {
-      text: 'Item Category',
-      base: '/en/data/inventory/',
-      link: 'list',
-      collapsed: false,
-      items: [
-        { text: 'Agriculture', link: 'agriculture' },
-        { text: 'Arrow', link: 'arrow' },
-        { text: 'Books', link: 'book' },
-        { text: 'Bow', link: 'bow' },
-        { text: 'Cuisine', link: 'cuisine' },
-        { text: 'Dye', link: 'dye' },
-        { text: 'Equipment', link: 'equipment' },
-        { text: 'Letter', link: 'letter' },
-        { text: 'Magical Item', link: 'magical-item' },
-        { text: 'Main Ingredient', link: 'main-ingredient' },
-        { text: 'Map', link: 'map' },
-        { text: 'Medical', link: 'medical' },
-        { text: 'Mineral', link: 'mineral' },
-        { text: 'Potion', link: 'potion' },
-        { text: 'Quest Item', link: 'quest-item' },
-        { text: 'Food', link: 'raw-food' },
-        { text: 'Resource', link: 'resource' },
-        { text: 'Spear', link: 'spear' },
-        { text: 'Special', link: 'special' },
-        { text: 'Subingredient', link: 'subingredient' },
-        { text: 'Sword', link: 'sword' },
-        { text: 'Tool', link: 'tool' },
-        { text: 'Treasure', link: 'treasure' },
-        { text: 'Whip', link: 'whip' }
-      ]
-    },
-    {
-      text: 'Crafting',
-      base: '/en/data/formula/',
-      link: 'list',
-      collapsed: false,
       items: []
     }
   ]
