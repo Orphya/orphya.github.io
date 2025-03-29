@@ -1,79 +1,79 @@
 import { DefaultTheme, defineConfig } from 'vitepress'
 
 export const fr = defineConfig({
-  lang: 'zh-Hans',
-  title: '暗黑大陆编年史 Wiki',
+  lang: 'fr-FR',
+  title: 'Dark Land Chronicle Wiki',
   description: '',
 
   themeConfig: {
     nav: nav(),
 
     sidebar: {
-      '/chs/guide/': { base: '/chs/guide/', items: sidebar_Guidelines() },
-      '/chs/quest/': { base: '/chs/quest/', items: sidebar_Quest() },
-      '/chs/region/': { base: '/chs/region/', items: sidebar_Region() },
-      '/chs/item/': { base: '/chs/item/', items: sidebar_Item() },
-      '/chs/npc/': { base: '/chs/npc/', items: sidebar_NPC() }
+      '/fr/guide/': { base: '/fr/guide/', items: sidebar_Guidelines() },
+      '/fr/quest/': { base: '/fr/quest/', items: sidebar_Quest() },
+      '/fr/region/': { base: '/fr/region/', items: sidebar_Region() },
+      '/fr/item/': { base: '/fr/item/', items: sidebar_Item() },
+      '/fr/npc/': { base: '/fr/npc/', items: sidebar_NPC() }
     },
 
     footer: {
       message: '<a href="https://github.com/Orphya/orphya.github.io"><img alt="Views" src="https://hits.sh/orphya.github.io.svg?label=Views&color=161618"></a>',
-      copyright: '游戏资产 Copyright © 冬火工房'
+      copyright: 'Ressources du jeu Copyright © Winterfire Studio'
     },
 
     docFooter: {
-      prev: '上一节',
-      next: '下一节'
+      prev: 'Page précédente',
+      next: 'Page suivante'
     },
 
     outline: {
-      label: '页面导航'
+      label: 'Navigation'
     },
 
     lastUpdated: {
-      text: '最后更新于',
+      text: 'Dernière mise à jour le',
       formatOptions: {
         dateStyle: 'short',
         timeStyle: 'medium'
       }
     },
 
-    langMenuLabel: '多语言',
-    returnToTopLabel: '回到顶部',
-    sidebarMenuLabel: '菜单',
-    darkModeSwitchLabel: '主题',
-    lightModeSwitchTitle: '切换到浅色模式',
-    darkModeSwitchTitle: '切换到深色模式',
-    skipToContentLabel: '跳转到内容'
+    langMenuLabel: 'Multilingue',
+    returnToTopLabel: 'Retour en haut',
+    sidebarMenuLabel: 'Menu',
+    darkModeSwitchLabel: 'Thème',
+    lightModeSwitchTitle: 'Passer en mode clair',
+    darkModeSwitchTitle: 'Passer en mode sombre',
+    skipToContentLabel: 'Aller à'
   }
 })
 
 function nav(): DefaultTheme.NavItem[] {
   return [
     {
-      text: '指南',
-      activeMatch: '/chs/guide/',
-      link: '/chs/guide/',
+      text: 'Guide',
+      activeMatch: '/fr/guide/',
+      link: '/fr/guide/',
     },
     {
-      text: '任务',
-      activeMatch: '/chs/quest/',
-      link: '/chs/quest/',
+      text: 'Quête',
+      activeMatch: '/fr/quest/',
+      link: '/fr/quest/',
     },
     {
-      text: '物品',
-      activeMatch: '/chs/item/',
-      link: '/chs/item/',
+      text: 'Objet',
+      activeMatch: '/fr/item/',
+      link: '/fr/item/',
     },
     {
-      text: '地区',
-      activeMatch: '/chs/region/',
-      link: '/chs/region/',
+      text: 'Région',
+      activeMatch: '/fr/region/',
+      link: '/fr/region/',
     },
     {
       text: 'NPC',
-      activeMatch: '/chs/npc/',
-      link: '/chs/npc/',
+      activeMatch: '/fr/npc/',
+      link: '/fr/npc/',
     }
   ]
 }
@@ -81,12 +81,12 @@ function nav(): DefaultTheme.NavItem[] {
 function sidebar_Guidelines(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: '指南',
+      text: 'Guide',
       items: [
-        { text: '基础指南', link: 'basic-guidelines' },
-        { text: '进阶指南', link: 'advanced-guidelines' },
-        { text: '世界观', link: 'world-views' },
-        { text: '游戏输入', link: 'game-input' }
+        { text: 'Guide de base', link: 'basic-guidelines' },
+        { text: 'Guide avancé', link: 'advanced-guidelines' },
+        { text: 'Vision du monde', link: 'world-views' },
+        { text: 'Paramètres du jeu', link: 'game-input' }
       ]
     }
   ]
@@ -95,7 +95,7 @@ function sidebar_Guidelines(): DefaultTheme.SidebarItem[] {
 function sidebar_Quest(): DefaultTheme.SidebarItem[] {
   return[
     {
-      text: '任务列表',
+      text: 'Liste des quêtes',
       link: 'list',
       items: []
     }
@@ -105,35 +105,35 @@ function sidebar_Quest(): DefaultTheme.SidebarItem[] {
 function sidebar_Item(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: '物品',
-      base: '/chs/item/category-',
+      text: 'Objet',
+      base: '/fr/item/category-',
       link: 'list',
       collapsed: false,
       items: [
-        { text: '鞭子', link: 'whip' },
-        { text: '刀剑', link: 'sword' },
-        { text: '地图', link: 'map' },
-        { text: '副原料', link: 'subingredient' },
-        { text: '工具', link: 'tool' },
-        { text: '弓', link: 'bow' },
-        { text: '贵重物品', link: 'treasure' },
-        { text: '箭矢', link: 'arrow' },
-        { text: '矿石', link: 'mineral' },
-        { text: '料理', link: 'cuisine' },
-        { text: '矛', link: 'spear' },
-        { text: '魔法道具', link: 'magical-item' },
-        { text: '农业', link: 'agriculture' },
-        { text: '染色剂', link: 'dye' },
-        { text: '任务道具', link: 'quest-item' },
-        { text: '食物', link: 'raw-food' },
-        { text: '书籍', link: 'book' },
-        { text: '素材', link: 'resource' },
-        { text: '特殊', link: 'special' },
-        { text: '信件', link: 'letter' },
-        { text: '药水', link: 'potion' },
-        { text: '医药', link: 'medical' },
-        { text: '主原料', link: 'main-ingredient' },
-        { text: '装备', link: 'equipment' }
+        { text: 'Agriculture', link: 'agriculture' },
+        { text: 'Arc', link: 'bow' },
+        { text: 'Carte', link: 'map' },
+        { text: 'Colorant', link: 'dye' },
+        { text: 'Cuisine', link: 'cuisine' },
+        { text: 'Épée', link: 'sword' },
+        { text: 'Équipement', link: 'equipment' },
+        { text: 'Flèche', link: 'arrow' },
+        { text: 'Fouet', link: 'whip' },
+        { text: 'Ingrédient principal', link: 'main-ingredient' },
+        { text: 'Lance', link: 'spear' },
+        { text: 'Lettre', link: 'letter' },
+        { text: 'Livres', link: 'book' },
+        { text: 'Médical', link: 'medical' },
+        { text: 'Minéral', link: 'mineral' },
+        { text: 'Nourriture', link: 'raw-food' },
+        { text: 'Objet de quête', link: 'quest-item' },
+        { text: 'Objet magique', link: 'magical-item' },
+        { text: 'Outil', link: 'tool' },
+        { text: 'Potion', link: 'potion' },
+        { text: 'Ressource', link: 'resource' },
+        { text: 'Sous-ingrédient', link: 'subingredient' },
+        { text: 'Spécial', link: 'special' },
+        { text: 'Trésor', link: 'treasure' },
       ]
     }
   ]
@@ -142,7 +142,7 @@ function sidebar_Item(): DefaultTheme.SidebarItem[] {
 function sidebar_Region(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: '地区',
+      text: 'Région',
       link: 'list',
       items: []
     }

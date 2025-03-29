@@ -1,79 +1,79 @@
 import { DefaultTheme, defineConfig } from 'vitepress'
 
 export const ko = defineConfig({
-  lang: 'zh-Hans',
-  title: '暗黑大陆编年史 Wiki',
+  lang: 'ko-KR',
+  title: '다크 랜드 크로니 위키',
   description: '',
 
   themeConfig: {
     nav: nav(),
 
     sidebar: {
-      '/chs/guide/': { base: '/chs/guide/', items: sidebar_Guidelines() },
-      '/chs/quest/': { base: '/chs/quest/', items: sidebar_Quest() },
-      '/chs/region/': { base: '/chs/region/', items: sidebar_Region() },
-      '/chs/item/': { base: '/chs/item/', items: sidebar_Item() },
-      '/chs/npc/': { base: '/chs/npc/', items: sidebar_NPC() }
+      '/ko/guide/': { base: '/ko/guide/', items: sidebar_Guidelines() },
+      '/ko/quest/': { base: '/ko/quest/', items: sidebar_Quest() },
+      '/ko/region/': { base: '/ko/region/', items: sidebar_Region() },
+      '/ko/item/': { base: '/ko/item/', items: sidebar_Item() },
+      '/ko/npc/': { base: '/ko/npc/', items: sidebar_NPC() }
     },
 
     footer: {
       message: '<a href="https://github.com/Orphya/orphya.github.io"><img alt="Views" src="https://hits.sh/orphya.github.io.svg?label=Views&color=161618"></a>',
-      copyright: '游戏资产 Copyright © 冬火工房'
+      copyright: '게임 자산 Copyright © Winterfire Studio'
     },
 
     docFooter: {
-      prev: '上一节',
-      next: '下一节'
+      prev: '이전 페이지',
+      next: '다음 페이지'
     },
 
     outline: {
-      label: '页面导航'
+      label: '항해술'
     },
 
     lastUpdated: {
-      text: '最后更新于',
+      text: '마지막 업데이트 날짜',
       formatOptions: {
         dateStyle: 'short',
         timeStyle: 'medium'
       }
     },
 
-    langMenuLabel: '多语言',
-    returnToTopLabel: '回到顶部',
-    sidebarMenuLabel: '菜单',
-    darkModeSwitchLabel: '主题',
-    lightModeSwitchTitle: '切换到浅色模式',
-    darkModeSwitchTitle: '切换到深色模式',
-    skipToContentLabel: '跳转到内容'
+    langMenuLabel: '다국어',
+    returnToTopLabel: '맨 위로',
+    sidebarMenuLabel: '메뉴',
+    darkModeSwitchLabel: '주제',
+    lightModeSwitchTitle: '라이트 모드로 전환',
+    darkModeSwitchTitle: '다크 모드로 전환',
+    skipToContentLabel: '점프하다'
   }
 })
 
 function nav(): DefaultTheme.NavItem[] {
   return [
     {
-      text: '指南',
-      activeMatch: '/chs/guide/',
-      link: '/chs/guide/',
+      text: '가이드',
+      activeMatch: '/ko/guide/',
+      link: '/ko/guide/',
     },
     {
-      text: '任务',
-      activeMatch: '/chs/quest/',
-      link: '/chs/quest/',
+      text: '퀘스트',
+      activeMatch: '/ko/quest/',
+      link: '/ko/quest/',
     },
     {
-      text: '物品',
-      activeMatch: '/chs/item/',
-      link: '/chs/item/',
+      text: '한항',
+      activeMatch: '/ko/item/',
+      link: '/ko/item/',
     },
     {
-      text: '地区',
-      activeMatch: '/chs/region/',
-      link: '/chs/region/',
+      text: '지역',
+      activeMatch: '/ko/region/',
+      link: '/ko/region/',
     },
     {
       text: 'NPC',
-      activeMatch: '/chs/npc/',
-      link: '/chs/npc/',
+      activeMatch: '/ko/npc/',
+      link: '/ko/npc/',
     }
   ]
 }
@@ -81,12 +81,12 @@ function nav(): DefaultTheme.NavItem[] {
 function sidebar_Guidelines(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: '指南',
+      text: '가이드',
       items: [
-        { text: '基础指南', link: 'basic-guidelines' },
-        { text: '进阶指南', link: 'advanced-guidelines' },
-        { text: '世界观', link: 'world-views' },
-        { text: '游戏输入', link: 'game-input' }
+        { text: '기본 가이드', link: 'basic-guidelines' },
+        { text: '고급 가이드', link: 'advanced-guidelines' },
+        { text: '세계관', link: 'world-views' },
+        { text: '게임 설정', link: 'game-input' }
       ]
     }
   ]
@@ -95,7 +95,7 @@ function sidebar_Guidelines(): DefaultTheme.SidebarItem[] {
 function sidebar_Quest(): DefaultTheme.SidebarItem[] {
   return[
     {
-      text: '任务列表',
+      text: '퀘스트 목록',
       link: 'list',
       items: []
     }
@@ -105,35 +105,35 @@ function sidebar_Quest(): DefaultTheme.SidebarItem[] {
 function sidebar_Item(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: '物品',
-      base: '/chs/item/category-',
+      text: '한항',
+      base: '/ko/item/category-',
       link: 'list',
       collapsed: false,
       items: [
-        { text: '鞭子', link: 'whip' },
-        { text: '刀剑', link: 'sword' },
-        { text: '地图', link: 'map' },
-        { text: '副原料', link: 'subingredient' },
-        { text: '工具', link: 'tool' },
-        { text: '弓', link: 'bow' },
-        { text: '贵重物品', link: 'treasure' },
-        { text: '箭矢', link: 'arrow' },
-        { text: '矿石', link: 'mineral' },
-        { text: '料理', link: 'cuisine' },
-        { text: '矛', link: 'spear' },
-        { text: '魔法道具', link: 'magical-item' },
-        { text: '农业', link: 'agriculture' },
-        { text: '染色剂', link: 'dye' },
-        { text: '任务道具', link: 'quest-item' },
-        { text: '食物', link: 'raw-food' },
-        { text: '书籍', link: 'book' },
-        { text: '素材', link: 'resource' },
-        { text: '特殊', link: 'special' },
-        { text: '信件', link: 'letter' },
-        { text: '药水', link: 'potion' },
-        { text: '医药', link: 'medical' },
-        { text: '主原料', link: 'main-ingredient' },
-        { text: '装备', link: 'equipment' }
+        { text: '검', link: 'sword' },
+        { text: '광물', link: 'mineral' },
+        { text: '귀중품', link: 'treasure' },
+        { text: '농업', link: 'agriculture' },
+        { text: '도구', link: 'tool' },
+        { text: '마법 아이템', link: 'magical-item' },
+        { text: '먹이다', link: 'dye' },
+        { text: '물약', link: 'potion' },
+        { text: '서적', link: 'book' },
+        { text: '요리', link: 'cuisine' },
+        { text: '음식', link: 'raw-food' },
+        { text: '의료', link: 'medical' },
+        { text: '자원', link: 'resource' },
+        { text: '장비', link: 'equipment' },
+        { text: '절하다', link: 'bow' },
+        { text: '주요 성분', link: 'main-ingredient' },
+        { text: '지도', link: 'map' },
+        { text: '창', link: 'spear' },
+        { text: '채찍', link: 'whip' },
+        { text: '퀘스트 아이템', link: 'quest-item' },
+        { text: '특별한', link: 'special' },
+        { text: '편지', link: 'letter' },
+        { text: '하위 성분', link: 'subingredient' },
+        { text: '화살', link: 'arrow' },
       ]
     }
   ]
@@ -142,7 +142,7 @@ function sidebar_Item(): DefaultTheme.SidebarItem[] {
 function sidebar_Region(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: '地区',
+      text: '지역',
       link: 'list',
       items: []
     }

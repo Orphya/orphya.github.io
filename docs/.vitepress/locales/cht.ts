@@ -9,11 +9,11 @@ export const cht = defineConfig({
     nav: nav(),
 
     sidebar: {
-      '/chs/guide/': { base: '/chs/guide/', items: sidebar_Guidelines() },
-      '/chs/quest/': { base: '/chs/quest/', items: sidebar_Quest() },
-      '/chs/region/': { base: '/chs/region/', items: sidebar_Region() },
-      '/chs/item/': { base: '/chs/item/', items: sidebar_Item() },
-      '/chs/npc/': { base: '/chs/npc/', items: sidebar_NPC() }
+      '/cht/guide/': { base: '/cht/guide/', items: sidebar_Guidelines() },
+      '/cht/quest/': { base: '/cht/quest/', items: sidebar_Quest() },
+      '/cht/region/': { base: '/cht/region/', items: sidebar_Region() },
+      '/cht/item/': { base: '/cht/item/', items: sidebar_Item() },
+      '/cht/npc/': { base: '/cht/npc/', items: sidebar_NPC() }
     },
 
     footer: {
@@ -52,28 +52,28 @@ function nav(): DefaultTheme.NavItem[] {
   return [
     {
       text: '指南',
-      activeMatch: '/chs/guide/',
-      link: '/chs/guide/',
+      activeMatch: '/cht/guide/',
+      link: '/cht/guide/',
     },
     {
       text: '任務',
-      activeMatch: '/chs/quest/',
-      link: '/chs/quest/',
+      activeMatch: '/cht/quest/',
+      link: '/cht/quest/',
     },
     {
       text: '物品',
-      activeMatch: '/chs/item/',
-      link: '/chs/item/',
+      activeMatch: '/cht/item/',
+      link: '/cht/item/',
     },
     {
       text: '地區',
-      activeMatch: '/chs/region/',
-      link: '/chs/region/',
+      activeMatch: '/cht/region/',
+      link: '/cht/region/',
     },
     {
       text: 'NPC',
-      activeMatch: '/chs/npc/',
-      link: '/chs/npc/',
+      activeMatch: '/cht/npc/',
+      link: '/cht/npc/',
     }
   ]
 }
@@ -106,7 +106,7 @@ function sidebar_Item(): DefaultTheme.SidebarItem[] {
   return [
     {
       text: '物品',
-      base: '/chs/item/category-',
+      base: '/cht/item/category-',
       link: 'list',
       collapsed: false,
       items: [
@@ -133,7 +133,7 @@ function sidebar_Item(): DefaultTheme.SidebarItem[] {
         { text: '藥水', link: 'potion' },
         { text: '醫藥', link: 'medical' },
         { text: '主原料', link: 'main-ingredient' },
-        { text: '裝備', link: 'equipment' }
+        { text: '裝備', link: 'equipment' },
       ]
     }
   ]

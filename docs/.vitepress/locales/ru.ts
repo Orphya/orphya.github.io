@@ -1,79 +1,79 @@
 import { DefaultTheme, defineConfig } from 'vitepress'
 
 export const ru = defineConfig({
-  lang: 'zh-Hans',
-  title: '暗黑大陆编年史 Wiki',
+  lang: 'ru-RU',
+  title: 'Хроники Темных земель Неделя',
   description: '',
 
   themeConfig: {
     nav: nav(),
 
     sidebar: {
-      '/chs/guide/': { base: '/chs/guide/', items: sidebar_Guidelines() },
-      '/chs/quest/': { base: '/chs/quest/', items: sidebar_Quest() },
-      '/chs/region/': { base: '/chs/region/', items: sidebar_Region() },
-      '/chs/item/': { base: '/chs/item/', items: sidebar_Item() },
-      '/chs/npc/': { base: '/chs/npc/', items: sidebar_NPC() }
+      '/ru/guide/': { base: '/ru/guide/', items: sidebar_Guidelines() },
+      '/ru/quest/': { base: '/ru/quest/', items: sidebar_Quest() },
+      '/ru/region/': { base: '/ru/region/', items: sidebar_Region() },
+      '/ru/item/': { base: '/ru/item/', items: sidebar_Item() },
+      '/ru/npc/': { base: '/ru/npc/', items: sidebar_NPC() }
     },
 
     footer: {
       message: '<a href="https://github.com/Orphya/orphya.github.io"><img alt="Views" src="https://hits.sh/orphya.github.io.svg?label=Views&color=161618"></a>',
-      copyright: '游戏资产 Copyright © 冬火工房'
+      copyright: 'Игровые активы Copyright © Winterfire Studio'
     },
 
     docFooter: {
-      prev: '上一节',
-      next: '下一节'
+      prev: 'Предыдущий раздел',
+      next: 'Следующий раздел'
     },
 
     outline: {
-      label: '页面导航'
+      label: 'Навигация по странице'
     },
 
     lastUpdated: {
-      text: '最后更新于',
+      text: 'Обновлено',
       formatOptions: {
         dateStyle: 'short',
         timeStyle: 'medium'
       }
     },
 
-    langMenuLabel: '多语言',
-    returnToTopLabel: '回到顶部',
-    sidebarMenuLabel: '菜单',
-    darkModeSwitchLabel: '主题',
-    lightModeSwitchTitle: '切换到浅色模式',
-    darkModeSwitchTitle: '切换到深色模式',
-    skipToContentLabel: '跳转到内容'
+    langMenuLabel: 'Многоязычный',
+    returnToTopLabel: 'Вернуться наверх',
+    sidebarMenuLabel: 'Mеню',
+    darkModeSwitchLabel: 'Tема',
+    lightModeSwitchTitle: 'Переключиться в светлый режим',
+    darkModeSwitchTitle: 'Переключиться в темный режим',
+    skipToContentLabel: 'Перейти к'
   }
 })
 
 function nav(): DefaultTheme.NavItem[] {
   return [
     {
-      text: '指南',
-      activeMatch: '/chs/guide/',
-      link: '/chs/guide/',
+      text: 'Гид',
+      activeMatch: '/ru/guide/',
+      link: '/ru/guide/',
     },
     {
-      text: '任务',
-      activeMatch: '/chs/quest/',
-      link: '/chs/quest/',
+      text: 'Квесты',
+      activeMatch: '/ru/quest/',
+      link: '/ru/quest/',
     },
     {
-      text: '物品',
-      activeMatch: '/chs/item/',
-      link: '/chs/item/',
+      text: 'Предмет',
+      activeMatch: '/ru/item/',
+      link: '/ru/item/',
     },
     {
-      text: '地区',
-      activeMatch: '/chs/region/',
-      link: '/chs/region/',
+      text: 'Область',
+      activeMatch: '/ru/region/',
+      link: '/ru/region/',
     },
     {
       text: 'NPC',
-      activeMatch: '/chs/npc/',
-      link: '/chs/npc/',
+      activeMatch: '/ru/npc/',
+      link: '/ru/npc/',
     }
   ]
 }
@@ -81,12 +81,12 @@ function nav(): DefaultTheme.NavItem[] {
 function sidebar_Guidelines(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: '指南',
+      text: 'Гид',
       items: [
-        { text: '基础指南', link: 'basic-guidelines' },
-        { text: '进阶指南', link: 'advanced-guidelines' },
-        { text: '世界观', link: 'world-views' },
-        { text: '游戏输入', link: 'game-input' }
+        { text: 'Базовое руководство', link: 'basic-guidelines' },
+        { text: 'Расширенное руководство', link: 'advanced-guidelines' },
+        { text: 'Мировоззрение', link: 'world-views' },
+        { text: 'Настройки игры', link: 'game-input' }
       ]
     }
   ]
@@ -95,7 +95,7 @@ function sidebar_Guidelines(): DefaultTheme.SidebarItem[] {
 function sidebar_Quest(): DefaultTheme.SidebarItem[] {
   return[
     {
-      text: '任务列表',
+      text: 'Список квестов',
       link: 'list',
       items: []
     }
@@ -105,35 +105,35 @@ function sidebar_Quest(): DefaultTheme.SidebarItem[] {
 function sidebar_Item(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: '物品',
-      base: '/chs/item/category-',
+      text: 'Предмет',
+      base: '/ru/item/category-',
       link: 'list',
       collapsed: false,
       items: [
-        { text: '鞭子', link: 'whip' },
-        { text: '刀剑', link: 'sword' },
-        { text: '地图', link: 'map' },
-        { text: '副原料', link: 'subingredient' },
-        { text: '工具', link: 'tool' },
-        { text: '弓', link: 'bow' },
-        { text: '贵重物品', link: 'treasure' },
-        { text: '箭矢', link: 'arrow' },
-        { text: '矿石', link: 'mineral' },
-        { text: '料理', link: 'cuisine' },
-        { text: '矛', link: 'spear' },
-        { text: '魔法道具', link: 'magical-item' },
-        { text: '农业', link: 'agriculture' },
-        { text: '染色剂', link: 'dye' },
-        { text: '任务道具', link: 'quest-item' },
-        { text: '食物', link: 'raw-food' },
-        { text: '书籍', link: 'book' },
-        { text: '素材', link: 'resource' },
-        { text: '特殊', link: 'special' },
-        { text: '信件', link: 'letter' },
-        { text: '药水', link: 'potion' },
-        { text: '医药', link: 'medical' },
-        { text: '主原料', link: 'main-ingredient' },
-        { text: '装备', link: 'equipment' }
+        { text: 'Главный ингридиент', link: 'main-ingredient' },
+        { text: 'Еда', link: 'raw-food' },
+        { text: 'Зелье', link: 'potion' },
+        { text: 'Инструмент', link: 'tool' },
+        { text: 'Карта', link: 'map' },
+        { text: 'Квестовый предмет', link: 'quest-item' },
+        { text: 'Книги', link: 'book' },
+        { text: 'Копье', link: 'spear' },
+        { text: 'Краситель', link: 'dye' },
+        { text: 'Кухня', link: 'cuisine' },
+        { text: 'Магический предмет', link: 'magical-item' },
+        { text: 'Медицинский', link: 'medical' },
+        { text: 'Меч', link: 'sword' },
+        { text: 'Минеральная', link: 'mineral' },
+        { text: 'Оборудование', link: 'equipment' },
+        { text: 'Особенный', link: 'special' },
+        { text: 'Письмо', link: 'letter' },
+        { text: 'Поклон', link: 'bow' },
+        { text: 'Ресурс', link: 'resource' },
+        { text: 'Cельское хозяйство', link: 'agriculture' },
+        { text: 'Сокровище', link: 'treasure' },
+        { text: 'Стрелка', link: 'arrow' },
+        { text: 'Cубингредиент', link: 'subingredient' },
+        { text: 'Хлыст', link: 'whip' },
       ]
     }
   ]
@@ -142,7 +142,7 @@ function sidebar_Item(): DefaultTheme.SidebarItem[] {
 function sidebar_Region(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: '地区',
+      text: 'Область',
       link: 'list',
       items: []
     }

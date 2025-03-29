@@ -1,5 +1,10 @@
 /* Global */
 
+:root {
+  --vp-sidebar-width: 300px;
+  --vp-layout-max-width: 1468px;
+}
+
 .vp-doc a {
   text-decoration: none;
 }

@@ -133,7 +133,7 @@ function sidebar_Item(): DefaultTheme.SidebarItem[] {
         { text: '药水', link: 'potion' },
         { text: '医药', link: 'medical' },
         { text: '主原料', link: 'main-ingredient' },
-        { text: '装备', link: 'equipment' }
+        { text: '装备', link: 'equipment' },
       ]
     }
   ]
