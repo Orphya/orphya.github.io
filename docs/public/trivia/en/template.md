@@ -1,2 +1,0 @@
-- EN Text
-- EN Text2
