@@ -1,5 +1,9 @@
 import { defineConfig } from 'vitepress'
 
+// Locales
+import chs from './config.chs.mts'
+import en from './config.en.mts'
+
 export default defineConfig({
   title: "Dark Land Chronicle",
   base: '/',
@@ -28,13 +32,28 @@ export default defineConfig({
     ]
   },
 
+  locales: {
+    chs: {
+      label: '简体中文',
+      lang: 'zh-CN',
+      link: '/chs/',
+      themeConfig: chs.themeConfig,
+    },
+    en: {
+      label: 'English',
+      lang: 'en-US',
+      link: '/en/',
+      themeConfig: en.themeConfig,
+    },
+  },
+
   vite: {
     build: {
       rollupOptions: {
         output: {
-          entryFileNames: '[name].js',
-          chunkFileNames: '[name].js',
-          assetFileNames: '[name].[ext]',
+          entryFileNames: 'assets/[name].js',
+          chunkFileNames: 'assets/[name].js',
+          assetFileNames: 'assets/[name].[ext]',
         }
       }
     }
