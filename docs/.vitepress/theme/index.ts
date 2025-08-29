@@ -1,5 +1,8 @@
 import DefaultTheme from 'vitepress/theme'
 
+// Import scripts for custom functionality
+import './script/redirect'
+
 // Import styles for custom components
 import CustomAnnouncement from './components/custom-announcement.vue'
 import CustomButton from './components/custom-button.vue'
