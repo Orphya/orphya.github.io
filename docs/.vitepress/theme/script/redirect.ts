@@ -1,4 +1,6 @@
-document.addEventListener('DOMContentLoaded', () => {
+import { onMounted } from 'vue'
+
+onMounted(() => {document.addEventListener('DOMContentLoaded', () => {
   if (window.location.pathname === '/') {
     const userLang: string = (navigator.language || (navigator as any).userLanguage || 'en').toLowerCase()
     const supportLangs: Record<string, string> = {
@@ -23,4 +25,4 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   }
-})
+})})

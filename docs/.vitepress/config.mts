@@ -1,9 +1,8 @@
-import footnote_plugin from 'markdown-it-footnote'
 import { defineConfig } from 'vitepress'
 
 // Locales
-import chs from './config.chs.mts'
-import en from './config.en.mts'
+import chs from './config.chs.ts'
+import en from './config.en.ts'
 
 export default defineConfig({
   title: "Dark Land Chronicle",
@@ -47,19 +46,13 @@ export default defineConfig({
     },
   },
 
-  markdown: {
-    config: (md) => {
-      md.use(footnote_plugin)
-    }
-  },
-
   vite: {
     build: {
       rollupOptions: {
         output: {
-          entryFileNames: 'assets/[name].js',
-          chunkFileNames: 'assets/[name].js',
-          assetFileNames: 'assets/[name].[ext]',
+          entryFileNames: '[name].js',
+          chunkFileNames: '[name].js',
+          assetFileNames: '[name].[ext]',
         }
       }
     }
