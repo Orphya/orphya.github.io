@@ -6,7 +6,6 @@ import en from './config.en.mts'
 
 export default defineConfig({
   title: "Dark Land Chronicle",
-  base: '/',
 
   lastUpdated: true,
   cleanUrls: true,
@@ -45,17 +44,5 @@ export default defineConfig({
       link: '/en/',
       themeConfig: en.themeConfig,
     },
-  },
-
-  vite: {
-    build: {
-      rollupOptions: {
-        output: {
-          entryFileNames: 'assets/[name].js',
-          chunkFileNames: 'assets/[name].js',
-          assetFileNames: 'assets/[name].[ext]',
-        }
-      }
-    }
   }
 })
