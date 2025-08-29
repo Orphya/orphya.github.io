@@ -6,6 +6,7 @@ import en from './config.en.ts'
 
 export default defineConfig({
   title: "Dark Land Chronicle",
+  base: '/',
 
   lastUpdated: true,
   cleanUrls: true,
